@@ -7,17 +7,49 @@
     <title> S.G.R.S.I </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/general.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/solicitudes.css">
 </head>
 
 <body id="inicio">
     <header class="HeaderChico">
         <img src="assets/img/iti utu.png" alt="" height="100px">
         <h1> S.G.R.S.I </h1>
+        <a href="/app/vista/tecnico.php">Volver</a>
     </header>
+    <nav class="NavBuscar">
+        <form class="FormBuscar">
+            <fieldset>
+                <input type="search" placeholder="Buscar...">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </fieldset>
+        </form>
+    </nav>
     <main>
+        <section class="SectionSolicitudes">
+            <article class="ArticleSolicitudes">
+                <header>
+                    <h3>Solicitudes Actuales</h3>
+                </header>
+                <p id="mensaje"></p>
+                <table class="TableSolicitudes">
+                    <thead>
+                        <tr>
+                            <th>Id solicitud</th>
+                            <th>Descripción</th>
+                            <th>Creada por</th>
+                            <th>Fecha solicitada</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo-solicitudes">
+                        
+                    </tbody>
+                </table>
+            </article>
+        </section>
     </main>
     <a href="#inicio" class="ASubir">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-circle"
@@ -30,7 +62,8 @@
     <footer>
         <p>&copy; 2026 SGRSI. Todos los derechos reservados.</p>
     </footer>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/solicitudesver.js"></script>    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
